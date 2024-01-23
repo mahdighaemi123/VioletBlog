@@ -1,1 +1,2 @@
-# Simple blog
+# Violet Blog
+Personal blog for me :)
