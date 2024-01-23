@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VioletBlog</title>
+
+    <style>
+        body {
+            background-color: #fff;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none !important;
+        }
+
+        hr {
+            border-color: #00000012;
+        }
+
+        .logo {
+            color: #945FD8;
+            margin: 20px 0;
+        }
+
+        #post,
+        .post-card {
+            max-width: 720px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+        }
+
+        #post>img,
+        #post>div>img,
+        .post-image {
+            max-width: 100%;
+            width: 480px;
+            height: auto;
+            margin: 0 auto;
+            border-radius: 24px;
+        }
+
+        .post-title {
+            color: #000;
+        }
+
+        .post-description {
+            color: #201E1E;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="nav-bar">
+        <a href="/">
+            <h1 class="logo">Violet Blog</h1>
+        </a>
+        <hr>
+    </div>
+
+    <div id="post">
+        <div>
+            <img src="/images/code.jpg">
+        </div>
+
+        # Creating Violet Blog
+        it was very fun actualy i made first version very simple and light weigth just using pure html, css . seriously
+        no library at all . also first version dont have any backend. i create html file for each post and its very
+        funny :))
+    </div>
+
+    <script src="/libs/marked.min.js"></script>
+    <script>
+
+        function removeLeadingSpaces(inputText) {
+            let lines = inputText.split('\n');
+            for (let i = 0; i < lines.length; i++) {
+                lines[i] = lines[i].replace(/^\s+/, '');
+            }
+            let resultText = lines.join('\n');
+            return resultText;
+        }
+
+        let post_element = document.getElementById('post')
+
+        let post = post_element.innerHTML;
+        post = removeLeadingSpaces(post);
+        post = marked.parse(post);
+
+        post_element.innerHTML = post;
+
+    </script>
+
+</body>
+
+</html>
