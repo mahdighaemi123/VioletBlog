@@ -5,52 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VioletBlog</title>
-    <style>
-        body {
-            background-color: #fff;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
 
-        a {
-            text-decoration: none !important;
-        }
-
-        hr {
-            border-color: #00000012;
-        }
-
-        .logo {
-            color: #8000FF;
-            margin: 20px 0;
-        }
-
-        .post-card {
-            max-width: 720px;
-            margin: 20px auto;
-            background-color: white;
-            padding: 20px;
-        }
-
-        .post-img {
-            max-width: 100%;
-            width: 480px;
-            height: auto;
-            margin: 0 auto;
-            border-radius: 24px;
-        }
-
-        .post-title {
-            color: #000;
-        }
-
-        .post-description {
-            color: #201E1E;
-            text-align: center;
-        }
-    </style>
-
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/index.css">
 </head>
 
 <body>
@@ -63,6 +20,22 @@
     </div>
 
     <div id="posts">
+
+        <!-- <div class="post-card">
+            <a href="/posts/<post-html-file>.html">
+                <img class="post-img" src="/images/<post-image>" alt="Illustration">
+                <h2 class="post-title"><post-title></h2>
+                <p class="post-description"><post-description></p>
+            </a>
+        </div> -->
+
+        <div class="post-card">
+            <a href="/posts/what_we_shoud_do.html">
+                <img class="post-img" src="/images/city.jpg" alt="Illustration">
+                <h2 class="post-title">What we shoud do?</h2>
+                <p class="post-description">how a lost person shoud find reason for living </p>
+            </a>
+        </div>
 
         <div class="post-card">
             <a href="/posts/hard_physical_activity.html">
@@ -90,6 +63,9 @@
         </div>
 
     </div>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/index.js"></script>
 
 </body>
 

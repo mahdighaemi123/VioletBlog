@@ -6,55 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VioletBlog</title>
 
-    <style>
-        body {
-            background-color: #fff;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-
-        a {
-            text-decoration: none !important;
-        }
-
-        hr {
-            border-color: #00000012;
-        }
-
-        .logo {
-            color: #8000FF;
-            margin: 20px 0;
-        }
-
-        #post,
-        .post-card {
-            max-width: 720px;
-            margin: 20px auto;
-            background-color: white;
-            padding: 20px;
-        }
-
-        #post>img,
-        #post>div>img,
-        #post>p>img,
-        .post-image {
-            max-width: 100%;
-            width: 480px;
-            height: auto;
-            margin: 0 auto;
-            border-radius: 24px;
-        }
-
-        .post-title {
-            color: #000;
-        }
-
-        .post-description {
-            color: #201E1E;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/css/article.css">
 </head>
 
 <body>
@@ -78,27 +31,8 @@
     </div>
 
     <script src="/libs/marked.min.js"></script>
-
-    <script>
-
-        function removeLeadingSpaces(inputText) {
-            let lines = inputText.split('\n');
-            for (let i = 0; i < lines.length; i++) {
-                lines[i] = lines[i].replace(/^\s+/, '');
-            }
-            let resultText = lines.join('\n');
-            return resultText;
-        }
-
-        let post_element = document.getElementById('post')
-
-        let post = post_element.innerHTML;
-        post = removeLeadingSpaces(post);
-        post = marked.parse(post);
-
-        post_element.innerHTML = post;
-
-    </script>
+    <script src="/js/main.js"></script>
+    <script src="/js/article.js"></script>
 
 </body>
 

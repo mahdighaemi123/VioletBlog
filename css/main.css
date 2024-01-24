@@ -1,0 +1,19 @@
+body {
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+hr {
+    border-color: #00000012;
+}
+
+.logo {
+    color: #8000FF;
+    margin: 20px 0;
+}
