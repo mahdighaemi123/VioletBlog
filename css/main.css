@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -11,6 +12,14 @@ a {
 
 hr {
     border-color: #00000012;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+p {
+    font-size: 20px;
 }
 
 .logo {
